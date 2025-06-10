@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class 9 - Shubham Bhai</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    p {
+      font-size: 15px;
+      color: #444;
+    }
+    input {
+      margin-top: 15px;
+      padding: 10px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #e53935;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c62828;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>🔐 Class 9 Access</h2>
+    <p>Hello bachoo, kaise ho!<br>Mai tumhara bhai Shubham.<br>Agar tumne batch liya hai to password dalo 👇</p>
+    <input type="password" id="password" placeholder="Enter password">
+    <br>
+    <button onclick="checkPassword()">Submit</button>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const correctPassword = "0001";
+      const userInput = document.getElementById("password").value;
+      if (userInput === correctPassword) {
+        window.location.href = "https://edu-vibe-nt.vercel.app/subjects/9";
+      } else {
+        alert("Galat password!");
+      }
+    }
+  </script>
+</body>
+</html>
